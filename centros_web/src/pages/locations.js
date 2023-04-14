@@ -1,16 +1,23 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import logo from '@/components/imgs/logoCW.png'
 import kids from '@/components/imgs/kids1.png'
 
 import locations from './locations.js'
-import register from './locations.js'
+import registration from './empRegForm.js'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const handleClick = (e, path) => {
+    if (path === {sliderTry}) {
+      console.log("Clicked on the About Page");
+    }
+    
+};
 export default function Home() {
   return (
     <>
@@ -26,7 +33,7 @@ export default function Home() {
               <Link className={styles.navDivText1} href="/">
                 Opcion 2
               </Link>
-              <Link className={styles.navDivText1} href="register">
+              <Link className={styles.navDivText1} href="registration">
                 Opcion 3
               </Link>
           </div>
@@ -36,35 +43,27 @@ export default function Home() {
             </text>
           </div>
         </div>
-        <div className={styles.logoTitleContainer}>
-          <div className={styles.logoC}>
-            <Image 
-              src={logo}
-              width={200}
-              height={200}></Image>
-          </div>
-          <div className={styles.titleContainer}>
-            <text className={styles.titleC}>
-              Centros
-            </text>
-            <text className={styles.titleI}>
-              Infantiles
-            </text>
-          </div>
-        </div>
-
-        <div className={styles.aboutTitleContainer}>
+      
+        <div className={styles.locationTitleContainer}>
           <text className={styles.aboutTitle}>
-            ¿Quiénes somos?
+            Nuestras Ubicaciones
           </text>
         </div>
+        <iframe 
+            width="600" 
+            height="500" 
+            id="gmap_canvas" 
+            src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            frameborder="0" 
+            scrolling="no" 
+            marginheight="0" 
+            marginwidth="0"
+            onClick={(e) => handleClick(e, "/sliderTry")}>
 
-        <div className={styles.containerAbout}>
-          <Image 
-              className={styles.aboutImage}
-              src={kids}></Image>
-          <text className={styles.aboutText}>La Defensoría de la Niñez y Adolescencia es una instancia dependiente del Gobierno Autónomo Municipal de Cochabamba que brinda servicios públicos, permanentes y gratuitos de defensa psico-social-legal, para garantizar a las niñas, niños y adolescentes la vigencia plena de sus derechos.</text>
-        </div>
+            </iframe>
+            <Link href="/sliderTry" className={styles.links}>
+            Ver Mas...
+        </Link>
       </main>
     </>
   )
