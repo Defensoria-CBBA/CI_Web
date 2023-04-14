@@ -3,11 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import logo from '@/components/imgs/logoCW.png'
-import kids from '@/components/imgs/kids1.png'
+
+
 
 import locations from './locations.js'
-import register from './locations.js'
+import employee from './empRegForm.js'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,10 +24,10 @@ export default function Home() {
               <Link className={styles.navDivText1} href="locations">
                 Opcion 1
               </Link>
-              <Link className={styles.navDivText1} href="/">
+              <Link className={styles.navDivText1} href="register">
                 Opcion 2
               </Link>
-              <Link className={styles.navDivText1} href="register">
+              <Link className={styles.navDivText1} href="empRegForm">
                 Opcion 3
               </Link>
           </div>
@@ -38,10 +39,7 @@ export default function Home() {
         </div>
         <div className={styles.logoTitleContainer}>
           <div className={styles.logoC}>
-            <Image 
-              src={logo}
-              width={200}
-              height={200}></Image>
+          
           </div>
           <div className={styles.titleContainer}>
             <text className={styles.titleC}>
@@ -60,12 +58,11 @@ export default function Home() {
         </div>
 
         <div className={styles.containerAbout}>
-          <Image 
-              className={styles.aboutImage}
-              src={kids}></Image>
+          
           <text className={styles.aboutText}>La Defensoría de la Niñez y Adolescencia es una instancia dependiente del Gobierno Autónomo Municipal de Cochabamba que brinda servicios públicos, permanentes y gratuitos de defensa psico-social-legal, para garantizar a las niñas, niños y adolescentes la vigencia plena de sus derechos.</text>
         </div>
       </main>
     </>
   )
 }
+

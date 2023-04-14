@@ -4,8 +4,7 @@ import Link from 'next/link'
 
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import logo from '@/components/imgs/logoCW.png'
-import kids from '@/components/imgs/kids1.png'
+
 
 import locations from './locations.js'
 import registration from './empRegForm.js'
