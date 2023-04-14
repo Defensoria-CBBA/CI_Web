@@ -96,10 +96,18 @@
   color: #808080;
   font-family: 'Raleway', sans-serif;
 }
+
 .titleI{
   font-size: 50px;
   color: #E6B44B;
   font-family: 'Raleway', sans-serif;
+}
+
+.formContainer{
+  width: 600px;
+  height: auto;
+  background-image: linear-gradient(#92e6be 40%, #ace6e3) ;
+  padding: 20px;
 }
 
 .aboutTitleContainer {

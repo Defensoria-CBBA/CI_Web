@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, ListGroup } from 'react-bootstrap';
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -41,7 +41,7 @@ export default function Registration() {
               <Link className={styles.navDivText1} href="daycareRegistration">
                 Opcion 2
               </Link>
-              <Link className={styles.navDivText1} href="registration">
+              <Link className={styles.navDivText1} href="empRegForm">
                 Opcion 3
               </Link>
           </div>
@@ -54,45 +54,42 @@ export default function Registration() {
       
         <div className={styles.locationTitleContainer}>
           <text className={styles.aboutTitle}>
-            Registra a un Funcionario/a
+            Registra un Centro
           </text>
         </div>
         <Form className={styles.formContainer}>
             <Form.Group controlId="formBasicEmail">
-                <Form.Label>Nombre</Form.Label>
-                <Form.Control type="email" placeholder="Primer Nombre" onChange={(e) => setEmail(e.target.value)} />
+                <Form.Label>Nombre Centro</Form.Label>
+                <Form.Control type="email" placeholder="Nombre Centro" onChange={(e) => setEmail(e.target.value)} />
                 <Form.Text className="text-muted">
                 </Form.Text>
             </Form.Group>
 
             <Form.Group controlId="formBasicPassword">
-                <Form.Label>Segundo Nombre</Form.Label>
-                <Form.Control type="password" placeholder="Segundo Nombre"  onChange={(e) => setPassword(e.target.value)} />
+                <Form.Label>Link de coordenadas</Form.Label>
+                <Form.Control type="text" placeholder="Segundo Nombre"  onChange={(e) => setPassword(e.target.value)} />
             </Form.Group>
 
             <Form.Group controlId="formBasicConfirmPassword">
-                <Form.Label>Apellido Paterno</Form.Label>
-                <Form.Control type="password" placeholder="Apellido Paterno"  onChange={(e) => setConfirmPassword(e.target.value)} />
-            </Form.Group>
-
-            <Form.Group controlId="formBasicConfirmPassword">
-                <Form.Label>Apellido Materno</Form.Label>
-                <Form.Control type="password" placeholder="Apellido Materno"  onChange={(e) => setConfirmPassword(e.target.value)} />
-            </Form.Group>
-
-            <Form.Group controlId="formBasicConfirmPassword">
-                <Form.Label>Correo Electronico</Form.Label>
-                <Form.Control type="password" placeholder="Correo Electronico"  onChange={(e) => setConfirmPassword(e.target.value)} />
-            </Form.Group>
-
-
+                <Form.Label>Funcionario a Cargo</Form.Label>
+                <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
+                  Funcionario
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Funcionario 1</a></li>
+                  <li><a class="dropdown-item" href="#">Funcionario 2</a></li>
+                  <li><a class="dropdown-item" href="#">Funcionario 3</a></li>
+                </ul>
+              </div>
+              </Form.Group>
 
             <br/>
 
             <Popup trigger={<Button variant="success">
                 Registrar
                 </Button>} position="right center">
-               <div>Usuario creado correctamente</div>
+               <div>Centro creado correctamente</div>
              </Popup>
         </Form>
       </main>

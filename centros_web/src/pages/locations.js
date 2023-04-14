@@ -29,7 +29,7 @@ export default function Home() {
               <Link className={styles.navDivText1} href="locations">
                 Opcion 1
               </Link>
-              <Link className={styles.navDivText1} href="/">
+              <Link className={styles.navDivText1} href="daycareRegistration">
                 Opcion 2
               </Link>
               <Link className={styles.navDivText1} href="registration">
