@@ -34,14 +34,14 @@ body {
   background-color: #6200c0;
   top: 0;
   width: 100%;
-  height: auto;
-  padding: 40px;
+  height: 100px;
+  padding: 30px;
   flex-direction: row;
 }
 
 .navigationSection{
   width: 100%;
-  height: auto;
+  height: 40px;
   background-color: transparent;
   flex-direction: row;
   justify-content: end;
@@ -50,9 +50,16 @@ body {
 
 .logoSection{
   width: 100%;
+  height: 40px;
   background-color: transparent;
   align-items: left;
 }
+
+.logo{
+  width: 50px;
+  height: 70px;
+}
+
 .linkSection{
   height: auto;
   padding: 5px;
@@ -70,16 +77,21 @@ body {
 .welcomeSection{
   width: 100%;
   height: auto;
-  padding: 40px;
+  padding: 100px;
   background-color: transparent;
   flex-direction: row;
 }
 
 .greeting{
-  width: 100%;
+  width: 200px;
   height: auto;
   padding: 10px;
-  background-color: bisque;
+  background-color: #6D13C7;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+  text-align: center;
+  font-weight: 500;
 }
 
 .titleSection{
@@ -87,6 +99,7 @@ body {
   height: auto;
   background-color: transparent;
   flex-direction: column;
+  padding: 20px;
 }
 
 .title{
@@ -107,9 +120,11 @@ body {
   width: 100%;
   height: auto;
   background-color: transparent;
-  align-items: center;
+  align-self: center;
   justify-content: center;
+  padding: 10px;
 }
+
 
 
 

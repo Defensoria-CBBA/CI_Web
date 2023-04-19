@@ -7,10 +7,10 @@ export default function Home() {
   return (
     
     <div >
-      <div className="mainContainer flex flex-col items-center justify-between">
-        <div className="topContainer flex flex-row">
+      <div className="mainContainer flex flex-col ">
+        <div className="topContainer flex flex-row fixed top-0 left-0 right-0">
           <div className="logoSection flex flex-col justify-between">
-            logo
+            <img className="logo" src="/components/images/logo.png"></img>
           </div>
           <div className="navigationSection flex flex-row ">
             
@@ -39,15 +39,19 @@ export default function Home() {
         
         <div className="welcomeSection flex flex-row">
           <div className="titleSection flex flex-col">
+            <div className="greeting">
+              Bienvenidos
+            </div>
             <div className="title">
               Centros Infantiles
             </div>
             <div className="tDescription">
-              Descripcion breve sobre la informacion y contenido de los entros infantiles de Cochabamba
+              Descripcion breve sobre la informacion y contenido de los centros infantiles de Cochabamba.
+              Esta pagina web ayudara a encontrar informacion acerca de cada cento infantil.
             </div>
           </div>
 
-          <div className="photoSection">
+          <div className="photoSection justify-center items-center">
             <img src="/components/images/mainPic.png"></img>
           </div>
         </div>
@@ -57,6 +61,11 @@ export default function Home() {
       <img src="/components/images/mainPic.png"></img>
       <img src="/components/images/mainPic.png"></img>
       <img src="/components/images/mainPic.png"></img>
+      <img src="/components/images/mainPic.png"></img>
+      <img src="/components/images/mainPic.png"></img>
+      <img src="/components/images/mainPic.png"></img>
+      <img src="/components/images/mainPic.png"></img>
+
     </div>
   )
 }
