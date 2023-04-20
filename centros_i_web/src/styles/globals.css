@@ -37,6 +37,8 @@ body {
   height: 100px;
   padding: 30px;
   flex-direction: row;
+  position: sticky;
+  margin-bottom: 0px;
 }
 
 .navigationSection{
