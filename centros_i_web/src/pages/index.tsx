@@ -19,7 +19,7 @@ export default function Home() {
             
             <ul className="linkSection flex flex-row">
               <li className="navLinks">
-                <a href="#">Ubicaciones</a>
+                <Link href="/map">Ubicaciones</Link>
               </li>
               <li className="navLinks">
                <Link href="/registroF">Nuevo Funcionario</Link>
