@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Link from 'next/link';
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,13 +19,13 @@ export default function Home() {
             
             <ul className="linkSection flex flex-row">
               <li className="navLinks">
-                <a href="#">Opcion 1</a>
+                <a href="#">Ubicaciones</a>
               </li>
               <li className="navLinks">
-                <a href="#">Opcion 2</a>
+               <Link href="/registroF">Nuevo Funcionario</Link>
               </li>
               <li className="navLinks">
-                <a href="#">Opcion 3</a>
+              <Link href="/registroC">Nuevo Centro</Link>
               </li>
               
               <li className="navLinks">
@@ -58,13 +61,6 @@ export default function Home() {
        
       </div>
 
-      <img src="/components/images/mainPic.png"></img>
-      <img src="/components/images/mainPic.png"></img>
-      <img src="/components/images/mainPic.png"></img>
-      <img src="/components/images/mainPic.png"></img>
-      <img src="/components/images/mainPic.png"></img>
-      <img src="/components/images/mainPic.png"></img>
-      <img src="/components/images/mainPic.png"></img>
 
     </div>
   )
