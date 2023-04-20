@@ -28,6 +28,7 @@ body {
   width: 100%;
   height: auto;
   flex-direction: column;
+  align-items: center;
 }
 
 .topContainer{
@@ -173,10 +174,21 @@ body {
 
 /*css for map container*/
 
+.mainMapContainer{
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+}
+
 .mapContainer{
   width: 800px;
   height: auto;
-  background-color: gray;
+  background-color: transparent;
   align-items: center;
   justify-content: center;
   padding: 40px;

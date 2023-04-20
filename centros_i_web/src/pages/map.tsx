@@ -30,7 +30,8 @@ function MyComponent() {
     }, [])
 
     return isLoaded ? (
-        <div className='mapContainer' >
+        <div className="mainMapContainer">
+            <div className='mapContainer' >
             <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}
@@ -41,6 +42,8 @@ function MyComponent() {
                 <Marker position={center} />
             </GoogleMap>
         </div>
+        </div>
+        
     ) : <></>
 
 }
