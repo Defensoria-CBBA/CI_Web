@@ -1,5 +1,6 @@
 import React from 'react';
-import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
+import { GoogleMap, Marker, MarkerF, useJsApiLoader } from '@react-google-maps/api';
+import { Modal, useModal, Button, Text } from "@nextui-org/react";
 
 const containerStyle = {
     width: '100%' ,
@@ -8,8 +9,8 @@ const containerStyle = {
 
 
 const center = {
-    lat: -17.393802887443847,
-    lng: -66.15695989215659
+    lat: -17.365500, 
+    lng: -66.153083
 };
 
 const center2 = {
@@ -18,6 +19,10 @@ const center2 = {
 };
 
 function MyComponent() {
+
+    const { setVisible, bindings } = useModal();
+
+
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
         googleMapsApiKey: "AIzaSyBM22sT9p3ffZPTeSEa9g89IprkG16Yjcg"
@@ -51,12 +56,50 @@ function MyComponent() {
                 onLoad={onLoad}
                 onUnmount={onUnmount}
                 >
-                    <Marker position={center} />
-                    <Marker position={center2} />
+                    <MarkerF position={center} onClick={() => setVisible(true)}/>
+                    <MarkerF position={center2} />
                 </GoogleMap>
-            
+
             </div>
+            <Modal
+                scroll
+                fullScreen
+                closeButton
+                aria-labelledby="modal-title"
+                aria-describedby="modal-description"
+                {...bindings}
+            >
+                <Modal.Header>
+                <Text id="modal-title" size={18}>
+                    Nombre Del Centro
+                </Text>
+                </Modal.Header>
+                <Modal.Body>
+                <Text id="modal-description">
+                    Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+                    dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+                    ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+                    magna, vel scelerisque nisl consectetur et. Cras mattis consectetur
+                    purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                    egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                    vestibulum at eros. Praesent commodo cursus magna, vel scelerisque
+                    nisl consectetur et. Cras mattis consectetur purus sit amet
+                    fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+                    quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                    Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                    
+                </Text>
+                </Modal.Body>
+                <Modal.Footer>
+                <Button flat auto color="error" onPress={() => setVisible(false)}>
+                    Close
+                </Button>
+                <Button onPress={() => setVisible(false)}>Agree</Button>
+                </Modal.Footer>
+            </Modal>
         </div>
+
+        
         
     ) : <></>
 
