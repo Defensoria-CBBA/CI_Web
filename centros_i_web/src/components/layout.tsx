@@ -22,13 +22,13 @@ function NavBar() {
               <div className="dv">
                 <li className="navLinks flex flex-row">
                 <img src="/images/plus.png" className="icon" />
-                <Link href="/registroF">Nuevo Funcionario</Link>
+                <Link href="/employee">Nuevo Funcionario</Link>
                </li>
               </div>
               <div className="dv">
                 <li className="navLinks flex flex-row">
                 <img src="/images/newEst.png" className="icon" />
-                <Link href="/registroC">Nuevo Centro</Link>
+                <Link href="/stablishment">Nuevo Centro</Link>
                 </li>
               </div>
               
