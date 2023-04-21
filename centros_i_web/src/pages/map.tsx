@@ -63,18 +63,19 @@ function MyComponent() {
             </div>
             <Modal
                 scroll
-                fullScreen
+                
+                blur
                 closeButton
                 aria-labelledby="modal-title"
                 aria-describedby="modal-description"
                 {...bindings}
             >
-                <Modal.Header>
+                <Modal.Header className="modalTitle">
                 <Text id="modal-title" size={18}>
                     Nombre Del Centro
                 </Text>
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body className="modalContainer">
                 <Text id="modal-description">
                     Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
                     dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
@@ -94,7 +95,6 @@ function MyComponent() {
                 <Button flat auto color="error" onPress={() => setVisible(false)}>
                     Close
                 </Button>
-                <Button onPress={() => setVisible(false)}>Agree</Button>
                 </Modal.Footer>
             </Modal>
         </div>

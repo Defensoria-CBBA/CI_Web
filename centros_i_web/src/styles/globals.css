@@ -228,4 +228,20 @@ body {
   color: white;
 }
 
+/*Modal Container css*/
 
+.modalTitle{
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: 700;
+}
+
+.modalContainer{
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Century Gothic', sans-serif;
+}
