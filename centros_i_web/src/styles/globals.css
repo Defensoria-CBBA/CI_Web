@@ -20,7 +20,7 @@ body {
   background-color: white;
   width: 100%;
   height: 100%;
-
+  padding-top: 5%;
 }
 
 .mainContainer{
@@ -38,7 +38,7 @@ body {
   height: 100px;
   padding: 30px;
   flex-direction: row;
-  position: sticky;
+  position: fixed;
   
 }
 
@@ -189,9 +189,43 @@ body {
 .mapContainer{
   width: auto;
   height: auto;
-  background-color: rgba(163, 231, 183, 0.534);
   align-items: center;
   justify-content: center;
   border-radius: 0 0 20px 20px;
-  padding: 50px;
+  background-color: #B2D93A;
+  border-color: #B2D93A;
+  border-style: solid 10px;
+  border-width: 2px;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
 }
+
+.containerGrande{
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+.mapFormTitle{
+  width: 100%;
+  height: auto;
+  background-color: #B2D93A;
+  border-radius: 20px 20px 0px 0px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+
