@@ -4,7 +4,7 @@ function NavBar() {
     return <div>
         <div className="topContainer flex flex-row fixed top-0 left-0 right-0">
           <div className="logoSection flex flex-col justify-between">
-            <img className="logo" src="/images/logo.png"></img>
+            <a href="/"><img className="logo" src="/images/logo.png"></img></a>
           </div>
           <div className="navigationSection flex flex-row ">
             
@@ -13,10 +13,10 @@ function NavBar() {
                 <Link href="/map">Ubicaciones</Link>
               </li>
               <li className="navLinks">
-               <Link href="/registroF">Nuevo Funcionario</Link>
+               <Link href="/employee">Nuevo Funcionario</Link>
               </li>
               <li className="navLinks">
-              <Link href="/registroC">Nuevo Centro</Link>
+              <Link href="/stablishment">Nuevo Centro</Link>
               </li>
               
               <li className="navLinks">

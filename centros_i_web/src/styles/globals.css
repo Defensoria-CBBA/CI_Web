@@ -39,7 +39,7 @@ body {
   padding: 30px;
   flex-direction: row;
   position: sticky;
-  margin-bottom: 0px;
+  
 }
 
 .navigationSection{
@@ -49,6 +49,7 @@ body {
   flex-direction: row;
   justify-content: end;
   padding: 0px;
+  margin-bottom: 50px;
 }
 
 .logoSection{
@@ -182,14 +183,15 @@ body {
   align-items: center;
   align-content: center;
   justify-content: center;
-  padding: 20px;
+  padding: 90px;
 }
 
 .mapContainer{
-  width: 800px;
+  width: auto;
   height: auto;
-  background-color: transparent;
+  background-color: rgba(163, 231, 183, 0.534);
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  border-radius: 0 0 20px 20px;
+  padding: 50px;
 }

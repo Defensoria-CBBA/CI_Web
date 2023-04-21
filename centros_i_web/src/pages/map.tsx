@@ -30,7 +30,10 @@ function MyComponent() {
     }, [])
 
     return isLoaded ? (
-        <div className="mainMapContainer">
+        <div className="mainMapContainer items-center">
+            <div className="formTitle">
+                Nuestras Ubicaciones
+            </div>
             <div className='mapContainer' >
             <GoogleMap
             mapContainerStyle={containerStyle}
