@@ -61,8 +61,8 @@ body {
 }
 
 .logo{
-  width: 50px;
-  height: 70px;
+  width: 10%;
+  height: 100%;
 }
 
 .linkSection{
@@ -79,8 +79,23 @@ body {
 .navLinks{
   width: auto;
   height: auto;
-  margin-right: 10px;
+  flex-direction: row;
+  float : left;
+
 }
+
+.dv{
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.dv:hover, .dv:active, .dv:focus{
+  background-color: rgba(255, 255, 255, 0.104);
+  border-radius: 10px;
+  scale: 1.1;
+  transition-duration: 100ms;
+}
+
 
 .welcomeSection{
   width: 100%;
@@ -247,6 +262,14 @@ body {
   font-family: 'Century Gothic', sans-serif;
 }
 
+/*icons css*/
+
+.icon{
+  width: 20px;
+  height: 20px;
+  flex-direction: row;
+  margin-right: 5px;
+}
 
 /*Card Slider CSS*/
 
