@@ -54,14 +54,14 @@ body {
 }
 
 .logoSection{
-  width: 100%;
+  width: auto;
   height: 40px;
   background-color: transparent;
   align-items: left;
 }
 
 .logo{
-  width: 10%;
+  width: 25%;
   height: 100%;
 }
 
@@ -100,7 +100,7 @@ body {
 .welcomeSection{
   width: 100%;
   height: auto;
-  padding: 100px;
+  padding: 80px;
   background-color: transparent;
   flex-direction: row;
 }
@@ -148,6 +148,72 @@ body {
   padding: 10px;
 }
 
+.bottomSection{
+  width: 70px;
+  height: 70px;
+  padding: 0px;
+  background-color: transparent;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/*About Us Section CSS*/
+
+.aboutMainContainer{
+  width:100%;
+  height: auto;
+  padding: 30px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.aboutTitle{
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  background-color: transparent;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color:#FE7C56
+
+}
+
+.aboutSubContainer{
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  background-color: transparent;
+  flex-direction: row;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.aboutDesc{
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.aboutImgs1{
+  width: 25%;
+  height: auto;
+  padding: 20px;
+  background-color: transparent;
+}
 
 /*hola uwu*/
 
@@ -187,7 +253,6 @@ body {
   justify-content: center;
   padding: 20px;
 }
-
 
 /*css for map container*/
 
@@ -246,6 +311,17 @@ body {
 
 /*Modal Container css*/
 
+.mainModalArea{
+  width: 800px;
+  height: auto;
+  background-color: red;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  
+}
+
 .modalTitle{
   font-family: 'Century Gothic', sans-serif;
   font-weight: 700;
@@ -272,4 +348,124 @@ body {
 }
 
 /*Card Slider CSS*/
+
+.box-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  /*%%%%%%%%
+   %% CARD %%
+   %%%%%%%%*/
+  /*%% End card %%*/
+}
+.box-container .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f5f6fa;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.box-container .card:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0;
+  background: #64b3f4;
+  transition: all 0.5s ease;
+}
+.box-container .card:hover {
+  /*%% Card on hover %%*/
+}
+.box-container .card:hover:before {
+  height: 180px;
+}
+.box-container .card:hover .social {
+  margin-top: 50px;
+}
+.box-container .card:hover .pic {
+  width: 120px;
+  height: 120px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px 1px #888;
+}
+.box-container .card:hover .content {
+  margin-top: 90px;
+}
+.box-container .card .social {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 0;
+  margin-top: -30px;
+  text-align: center;
+  transition: margin-top 0.5s ease;
+}
+.box-container .card .social a {
+  text-decoration: none;
+  color: #2d3436;
+  padding: 8px;
+  font-size: 18px;
+  color: #fff;
+}
+.box-container .card .pic {
+  position: relative;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.box-container .card .pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.box-container .card .content {
+  margin-top: 90px;
+  text-align: center;
+  padding: 0 30px;
+  color: #2d3436;
+  transition: margin-top 0.5s ease;
+}
+.box-container .card .content .title {
+  margin-bottom: 0;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 22px;
+}
+.box-container .card .content span {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+.box-container .card .content p {
+  margin: 20px 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #b0b0b0;
+}
+/*%% End container %%*/
+
+
+
+/*Home Page Slider CSS*/
+
+.sliderMainContainer{
+  width:100%;
+  height: auto;
+  padding: 30px;
+  background-color: #B2D93A;
+}
 
