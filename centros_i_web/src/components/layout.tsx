@@ -37,7 +37,7 @@ function NavBar() {
               <div className="dv">
                 <li className="navLinks flex flex-row">
                   <img src="/images/person.png" className="icon"></img>
-                  <a href="#">Soy Funcionario/a</a>
+                  <a href="/login">Soy Funcionario/a</a>
                 </li>
               </div>
             </ul>

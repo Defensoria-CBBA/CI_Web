@@ -119,7 +119,7 @@ export default function Home() {
         </div>
 
         <div className="copyrightContainer">
-          Copyright &copy; 2023 
+          Copyright &copy; 2023 Nasa Kisis
         </div>
 
         <div className="footerLinks">
