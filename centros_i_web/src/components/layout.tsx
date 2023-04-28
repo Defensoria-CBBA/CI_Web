@@ -5,8 +5,13 @@ import Link from "next/link";
 function NavBar() {
     return <div>
         <div className="topContainer flex flex-row fixed top-0 left-0 right-0">
-          <div className="logoSection flex flex-col justify-between">
-            <a href="/"><img className="logo" src="/images/logo.png"></img></a>
+          <div className="logoSection flex flex-row justify-between">
+            <a href="/"><img className="logo" src="/images/logo.png"></img>
+             <div className="logoTitle">
+              Centros Infantiles
+             </div>
+             
+            </a>
           </div>
           <div className="navigationSection flex flex-row ">
             

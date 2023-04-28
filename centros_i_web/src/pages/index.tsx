@@ -50,9 +50,7 @@ export default function Home() {
 
         <div className="aboutSubContainer flex flex-row">
           
-          <div className="aboutImgs1">
-            <img src="/images/kidsClg1.png"></img>
-          </div>
+          
           <div className="aboutDesc">
             
               Descripcion breve sobre la informacion y contenido de los centros infantiles de Cochabamba.
@@ -68,9 +66,7 @@ export default function Home() {
               Los centros infantiles son establecimientos que ofrecen cuidado y educación a niños y niñas desde los primeros meses de vida hasta los seis años de edad. 
               Estos centros tienen como objetivo brindar un entorno seguro y estimulante para el desarrollo físico, emocional, social y cognitivo de los niños.
           </div>
-          <div className="aboutImgs1">
-            <img src="/images/kidsClg1.png"></img>
-          </div>
+          
         </div>
       </div>
 
