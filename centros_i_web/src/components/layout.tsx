@@ -2,8 +2,6 @@ import React from "react";
 import Link from "next/link";
 
 
-
-
 function NavBar() {
     return <div>
         <div className="topContainer flex flex-row fixed top-0 left-0 right-0">

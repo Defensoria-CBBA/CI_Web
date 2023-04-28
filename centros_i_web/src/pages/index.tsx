@@ -84,12 +84,12 @@ export default function Home() {
 
             <input className="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden checked></input>
             <div className="carousel-item">
-              <img src="/images/logo.png"></img>
+              <img src="/images/kidsGroupLarge.jpg"></img>
             </div>
 
             <input className="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden checked></input>
             <div className="carousel-item">
-              <img src="/images/mainPic.png"></img>
+              <img src="/images/kidsGroupLarge2.jpg"></img>
             </div>
 
             <label htmlFor="carousel-3" className="carousel-control prev control-2">‹</label>
@@ -110,6 +110,24 @@ export default function Home() {
               </li>
             </ol>
           </div>
+        </div>
+      </div>
+
+      <div className="footer">
+        <div className="footerTitle">
+          Centros Infantiles
+        </div>
+
+        <div className="copyrightContainer">
+          Copyright &copy; 2023 
+        </div>
+
+        <div className="footerLinks">
+          <Link href="#">Legal Stuff</Link>
+          |
+          <Link href="#">Privacy Policy</Link>
+          |
+          <Link href="#">Security</Link>
         </div>
       </div>
 

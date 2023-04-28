@@ -220,15 +220,15 @@ body {
 .sliderContainer{
   width: 100%;
   height: auto;
-  padding: 5px;
-  background-color: #B2D93A;
+  padding: 0px;
+  background-color: transparent;
 }
 
 
 .carousel {
   width: 100%;
   height: auto;
-  padding: 5px;
+  padding: 0px;
   background-color: transparent;
   position: relative;
 }
@@ -237,7 +237,7 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 400px;
+  height: 450px;
 }
 
 .carousel-open:checked + .carousel-item {
@@ -333,6 +333,45 @@ body {
 
 
 /*hola uwu*/
+
+/*Footer Section CSS*/
+
+.footer{
+  width: 100%;
+  height: auto;
+  background-color: #B2D93A;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+.footerTitle{
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.copyrightContainer{
+  width: 100%;
+  height: auto;
+  padding:10px;
+  background-color: transparent;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
 
 /*css for registration forms*/
 
