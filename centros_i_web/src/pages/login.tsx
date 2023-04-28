@@ -8,11 +8,9 @@ import From from "../components/login";
 export default function Login() {
 
     return (
-        <div className="formContainer">
             <>
              <From />
             </>
-        </div>
     )
 }
 
